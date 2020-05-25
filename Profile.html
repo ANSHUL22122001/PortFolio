@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1-0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<link rel="icon" href="favicon.ico">
     <title>myProject</title>
     <style>
         body {
@@ -123,8 +123,8 @@
         }
 
         .honest span {
-            color: #fff;
-            text-shadow: 0 0 20px #ff005b;
+            color:white;
+            text-shadow: 0 0 20px #e7588a;
         }
 
         .layout {
@@ -139,34 +139,49 @@
             height: 100%;
         }
 
-        .para {
-            font-size: 20px;
-            line-height: 2em;
-            margin: 60px 0 0 0;
-            color: white;
-        }
-
-        .btns{
+        .btnn {
             display: inline-block;
-            width:40px;
-            height:40px;
+            width: 100%;
+            height: 100%;
             background: red;
-            margin:10px;
+            margin: 0;
             border-radius: 20%;
             box-shadow: 0 0 20px #fff;
-            overflow :hidden;
+            overflow: hidden;
             position: relative;
         }
+
+        .btnn .para {
+            font-size: 20px;
+            line-height: 2em;
+            margin: 40px;
+            color: black;
+            text-shadow: 0 0 20px #fff;
+            font-family: "bold";
+        }
+
+        .btns {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: red;
+            margin: 10px;
+            border-radius: 20%;
+            box-shadow: 0 0 20px #fff;
+            overflow: hidden;
+            position: relative;
+        }
+
         .social-icon {
-            
+
             color: black;
             margin-top: 19%;
-            font-size:25px;
+            font-size: 25px;
             line-height: 10px;
             text-shadow: 0 0 20px #ff005b;
         }
 
-        .btns:hover .social-icon{
+        .btns:hover .social-icon {
             transform: scale(1.3);
         }
     </style>
@@ -175,7 +190,7 @@
 <body>
     <div>
         <section class="effect">
-	<!--Navbar-->
+            <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-dark nav nav-tabs ">
                 <div><span class="font">P</span>ort<span class="font">F</span>olio</div>
 
@@ -210,7 +225,7 @@
                     </form>
                 </div>
             </nav>
-		<!--Video-->
+            <!--Video-->
             <video src="smoke.mp4" autoplay muted></video>
             <h2>Hey I'M</h2>
             <div>
@@ -219,65 +234,80 @@
                 </div>
 
                 <br><br>
-		<!--Bio-->
-                <div class="container layout">
+                <!--Bio-->
+                <div class="container-fluid layout">
                     <div class="text-right layout"> Bio</div>
                     <div class="row">
-
                         <div class="col-md-6">
-                            <p class="para text-left">My name is Anshul Sharma, and I belong's to ferozpur,punjab.
-                                Currently I live in kharar,mohali doing Computer Science Engineering
-                                from Chandigarh University.My goal is to be Software Engineer in a well reputated
-                                company. <br><a href="https://www.cuchd.in/international/why-to-choose-cu.php">click
-                                    here</a>
-                                &nbsp for more info.</p>
+                            <div class="btnn">
+                                <p class="para text-left">My name is Anshul Sharma, and I belong's to ferozpur,punjab.
+                                    Currently I live in kharar,mohali doing Computer Science Engineering
+                                    from Chandigarh University.My goal is to be Software Engineer in a well reputated
+                                    company. <br><a href="https://www.cuchd.in/international/why-to-choose-cu.php">click
+                                        here</a>
+                                    &nbsp for more info.</p>
+                            </div>
+                           
                         </div>
                         <div class="col-md-6">
-                            <img src="anshul.jpg">
+                            <img src="anshul.jpg" style="border-radius: 100%;">
                         </div>
                     </div>
                 </div>
-		<!--Schooling-->
+                <!--Schooling-->
                 <br><br><br>
                 <div class="text-left layout">Schooling</div>
-                <div class="container layout">
+                <div class="container-fluid layout">
                     <div class="row">
                         <div class="col-md-6">
                             <img src="http://schools.thelearningpoint.net/pics-cbse/schoolPic25368.JPG">
                         </div>
                         <div class="col-md-6">
-                            <p class="para text-left">My School is Punjab's no. 1 I choose Chandigarh University for my
-                                graduation as it is dynamic,
-                                state of
-                                the art, independent education provider of vocational courses. Here courses are unique
-                                in every
-                                respect and students are certain that you will graduate with an education, attitude and
-                                skillset
-                                that will set you apart <br><a
-                                    href="https://www.cuchd.in/international/why-to-choose-cu.php">click here</a>
-                                &nbsp for more info.</p>
+                            <div class="btnn">
+                                <p class="para text-left">My School is Punjab's no. 1 I choose Chandigarh University for
+                                    my
+                                    graduation as it is dynamic,
+                                    state of
+                                    the art, independent education provider of vocational courses. Here courses are
+                                    unique
+                                    in every
+                                    respect and students are certain that you will graduate with an education, attitude
+                                    and
+                                    skillset
+                                    that will set you apart <br><a
+                                        href="https://www.cuchd.in/international/why-to-choose-cu.php">click here</a>
+                                    &nbsp for more info.</p>
+                            </div>
                         </div>
+
                     </div>
                 </div>
-		<!---Gradutation-->
+                <!---Gradutation-->
                 <br><br><br>
                 <div class="text-right layout">Gradutaion</div>
-                <div class="container layout">
+                <div class="container-fluid layout">
                     <div class="row">
                         <div class="col-md-6">
-                            <p class="para text-left">I choose Chandigarh University for my graduation as it is dynamic,
-                                state of
-                                the art, independent education provider of vocational courses. Here courses are unique
-                                in every
-                                respect and students are certain that you will graduate with an education, attitude and
-                                skillset
-                                that will set you apart from your colleagues and that will have a significant impact in
-                                your career.
-                                <br><a href="https://www.cuchd.in/international/why-to-choose-cu.php">click here</a>
-                                &nbsp for more info.</p>
+                            <div class="btnn">
+                                <p class="para text-left">I choose Chandigarh University for my graduation as it is
+                                    dynamic,
+                                    state of
+                                    the art, independent education provider of vocational courses. Here courses are
+                                    unique
+                                    in every
+                                    respect and students are certain that you will graduate with an education, attitude
+                                    and
+                                    skillset
+                                    that will set you apart from your colleagues and that will have a significant impact
+                                    in
+                                    your career.
+                                    <br><a href="https://www.cuchd.in/international/why-to-choose-cu.php">click here</a>
+                                    &nbsp for more info.</p>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <img src="https://scontent.fixc3-1.fna.fbcdn.net/v/t1.0-9/26112246_1358509560922426_5975255816294805021_n.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_ohc=-QboTNYDi0oAX_YB0vv&_nc_ht=scontent.fixc3-1.fna&oh=f9340c246757d8f24d4695910bc540ec&oe=5EF06937">
+                            <img
+                                src="https://scontent.fixc3-1.fna.fbcdn.net/v/t1.0-9/26112246_1358509560922426_5975255816294805021_n.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_ohc=-QboTNYDi0oAX_YB0vv&_nc_ht=scontent.fixc3-1.fna&oh=f9340c246757d8f24d4695910bc540ec&oe=5EF06937">
                         </div>
                     </div>
                 </div>
@@ -289,15 +319,17 @@
                 <br><br>
                 <footer class="white-section text-center" id="footer">
                     <div class="container-fluid">
-                        <a href="https://www.facebook.com/profile.php?id=100010809138499" class="btns"><i class="social-icon fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100010809138499" class="btns"><i
+                                class="social-icon fab fa-facebook-f"></i></a>
                         <a href="#" class="btns"><i class="social-icon fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/anshul__sharma8692156/" class="btns"><i class="social-icon fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/anshul__sharma8692156/" class="btns"><i
+                                class="social-icon fab fa-instagram"></i></a>
                         <a href="#" class="btns"><i class="social-icon fab fa-youtube"></i></a>
                         <p>Thanks for visiting my Website</p>
                     </div>
                 </footer>
                 <br><br>
-		<!--Fixed Bottom-->
+                <!--Fixed Bottom-->
                 <div class="fixed-bottom text-center row " aria-level="100px ">
                     <div class="col-md-2">
                         <a href="#">Rate My Website</a>
@@ -313,7 +345,7 @@
                 </div>
             </div>
     </div>
-	<!--Animation-->
+    <!--Animation-->
     <h1 class="neon">
         <span>A</span>
         <span>N</span>
@@ -325,8 +357,8 @@
     </section>
     </div>
 
-    <script src="Jquery.js"></script>
-    <script src="bootstrap.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
