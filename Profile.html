@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1-0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <title>myProject</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-shadow: 0 0 20px #fff;
+        }
+
+        .effect {
+            margin: 0;
+            padding: 10, 0, 0, 0;
+        }
+
+        section {
+            height: 100vh;
+            background: black;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 340px;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            font-size: 3em;
+            font-family: sans-serif;
+            letter-spacing: 0.2em;
+            color: #fff;
+            text-shadow: 0 0 20px #ff005b;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 440px;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            font-size: 5em;
+            font-family: sans-serif;
+            letter-spacing: 0.1em;
+            color: #fff;
+            text-shadow: 0 0 20px #ff005b;
+        }
+
+        h1 span {
+            opacity: 0;
+            display: inline-block;
+            animation: animate 1s linear forwards;
+        }
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+                transform: rotateY(90deg);
+                filter: blur(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: rotateY(0deg);
+                filter: blur(0);
+            }
+        }
+
+        h1 span:nth-child(1) {
+            animation-delay: 1s;
+        }
+
+        h1 span:nth-child(2) {
+            animation-delay: 1.5s;
+        }
+
+        h1 span:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        h1 span:nth-child(4) {
+            animation-delay: 2.5s;
+        }
+
+        h1 span:nth-child(5) {
+            animation-delay: 3s;
+        }
+
+        h1 span:nth-child(6) {
+            animation-delay: 3.5s;
+        }
+
+        nav {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav span {
+            font-size: 24px;
+            color: red;
+            font-family: "bold";
+        }
+
+        .honest {
+            padding-left: 60px;
+            font-family: "bold";
+            font-size: 150px
+        }
+
+        .honest span {
+            color: #fff;
+            text-shadow: 0 0 20px #ff005b;
+        }
+
+        .layout {
+            font-family: "bold";
+            font-size: 150px;
+            color: red;
+            text-shadow: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .para {
+            font-size: 20px;
+            line-height: 2em;
+            margin: 60px 0 0 0;
+            color: white;
+        }
+
+        .btns{
+            display: inline-block;
+            width:40px;
+            height:40px;
+            background: red;
+            margin:10px;
+            border-radius: 20%;
+            box-shadow: 0 0 20px #fff;
+            overflow :hidden;
+            position: relative;
+        }
+        .social-icon {
+            
+            color: black;
+            margin-top: 19%;
+            font-size:25px;
+            line-height: 10px;
+            text-shadow: 0 0 20px #ff005b;
+        }
+
+        .btns:hover .social-icon{
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <section class="effect">
+	<!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark nav nav-tabs ">
+                <div><span class="font">P</span>ort<span class="font">F</span>olio</div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                &nbsp&nbsp&nbsp&nbsp
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        &nbsp&nbsp&nbsp&nbsp
+                        <li class="nav-item active">
+                            <a class="nav-link" href="gallery.html">MyTeam <span class="sr-only">(current)</span></a>
+                        </li>
+                        &nbsp&nbsp&nbsp&nbsp
+                        <li class="nav-item active">
+                            <a class="nav-link" href="hobbies.html">Hobbies <span class="sr-only">(current)</span></a>
+                        </li>
+                        &nbsp&nbsp&nbsp&nbsp
+                        <li class="nav-item active">
+                            <a class="nav-link" href="skills.html">Skills <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+		<!--Video-->
+            <video src="smoke.mp4" autoplay muted></video>
+            <h2>Hey I'M</h2>
+            <div>
+                <div class="honest">
+                    AN<br><span>HONEST</span><br>PORTFOLIO
+                </div>
+
+                <br><br>
+		<!--Bio-->
+                <div class="container layout">
+                    <div class="text-right layout"> Bio</div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="para text-left">My name is Anshul Sharma, and I belong's to ferozpur,punjab.
+                                Currently I live in kharar,mohali doing Computer Science Engineering
+                                from Chandigarh University.My goal is to be Software Engineer in a well reputated
+                                company. <br><a href="https://www.cuchd.in/international/why-to-choose-cu.php">click
+                                    here</a>
+                                &nbsp for more info.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="anshul.jpg">
+                        </div>
+                    </div>
+                </div>
+		<!--Schooling-->
+                <br><br><br>
+                <div class="text-left layout">Schooling</div>
+                <div class="container layout">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="http://schools.thelearningpoint.net/pics-cbse/schoolPic25368.JPG">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="para text-left">My School is Punjab's no. 1 I choose Chandigarh University for my
+                                graduation as it is dynamic,
+                                state of
+                                the art, independent education provider of vocational courses. Here courses are unique
+                                in every
+                                respect and students are certain that you will graduate with an education, attitude and
+                                skillset
+                                that will set you apart <br><a
+                                    href="https://www.cuchd.in/international/why-to-choose-cu.php">click here</a>
+                                &nbsp for more info.</p>
+                        </div>
+                    </div>
+                </div>
+		<!---Gradutation-->
+                <br><br><br>
+                <div class="text-right layout">Gradutaion</div>
+                <div class="container layout">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="para text-left">I choose Chandigarh University for my graduation as it is dynamic,
+                                state of
+                                the art, independent education provider of vocational courses. Here courses are unique
+                                in every
+                                respect and students are certain that you will graduate with an education, attitude and
+                                skillset
+                                that will set you apart from your colleagues and that will have a significant impact in
+                                your career.
+                                <br><a href="https://www.cuchd.in/international/why-to-choose-cu.php">click here</a>
+                                &nbsp for more info.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://scontent.fixc3-1.fna.fbcdn.net/v/t1.0-9/26112246_1358509560922426_5975255816294805021_n.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_ohc=-QboTNYDi0oAX_YB0vv&_nc_ht=scontent.fixc3-1.fna&oh=f9340c246757d8f24d4695910bc540ec&oe=5EF06937">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Footer -->
+                <br><br>
+                <footer class="white-section text-center" id="footer">
+                    <div class="container-fluid">
+                        <a href="https://www.facebook.com/profile.php?id=100010809138499" class="btns"><i class="social-icon fab fa-facebook-f"></i></a>
+                        <a href="#" class="btns"><i class="social-icon fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/anshul__sharma8692156/" class="btns"><i class="social-icon fab fa-instagram"></i></a>
+                        <a href="#" class="btns"><i class="social-icon fab fa-youtube"></i></a>
+                        <p>Thanks for visiting my Website</p>
+                    </div>
+                </footer>
+                <br><br>
+		<!--Fixed Bottom-->
+                <div class="fixed-bottom text-center row " aria-level="100px ">
+                    <div class="col-md-2">
+                        <a href="#">Rate My Website</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 ">
+                        <a href="#">Contact Me</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 ">
+                        <a href="#">Join My Team</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+	<!--Animation-->
+    <h1 class="neon">
+        <span>A</span>
+        <span>N</span>
+        <span>S</span>
+        <span>H</span>
+        <span>U</span>
+        <span>L</span>
+    </h1>
+    </section>
+    </div>
+
+    <script src="Jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>

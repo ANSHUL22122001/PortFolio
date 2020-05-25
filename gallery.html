@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MyTeam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="swiper.min.css" type="text/css">
+
+    <!-- Demo styles -->
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-shadow: 0 0 20px #fff;
+            animation: animate 1s linear forwards;
+        }
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+                transform: rotateY(90deg);
+                filter: blur(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: rotateY(0deg);
+                filter: blur(0);
+            }
+        }
+
+        .photos {
+            background: #262626;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 380px;
+            background: white;
+        }
+
+        .swiper-slide .imgBx {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .swiper-slide .imgBx img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide .details {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .swiper-slide .details h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-family: 'Lucida Sans';
+            color: black;
+        }
+
+        .swiper-slide .details h3 span {
+            font-size: 18px;
+            text-align: center;
+            color: red;
+            font-family: 'Lucida Sans';
+        }
+
+        nav {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav span {
+            font-size: 24px;
+            color: red;
+            font-family: "bold";
+        }
+
+        h1 {
+            top: 90px;
+            font-size: 70 px;
+            padding-left: 60px;
+            font-family: "monserrate";
+            letter-spacing: 0.2em;
+        }
+
+        h1 span {
+            font-size: 70 px;
+            font-family: "monserrate";
+            letter-spacing: 0.2em;
+            color: red;
+        }
+
+        h3 {
+            color: "black";
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav nav-tabs ">
+        <div><span class="font">P</span>ort<span class="font">F</span>olio</div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        &nbsp&nbsp&nbsp&nbsp
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Profile.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                &nbsp&nbsp&nbsp&nbsp
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">MyTeam <span class="sr-only">(current)</span></a>
+                </li>
+                &nbsp&nbsp&nbsp&nbsp
+                <li class="nav-item active">
+                    <a class="nav-link" href="Hobbies.html">Hobbies <span class="sr-only">(current)</span></a>
+                </li>
+                &nbsp&nbsp&nbsp&nbsp
+                <li class="nav-item active">
+                    <a class="nav-link" href="Skills.html">Skills <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <div class="fixed-bottom text-center row " aria-level="100px ">
+        <div class="col-md-2">
+            <a href="#">Rate My Website</a>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4 "></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2 ">
+            <a href="#">Join My Team</a>
+        </div>
+    </div>
+    <h1>Don’t <span>Doubt</span> Your Value. <br>Don’t <span>run</span> from, who you <span>are</span>. </h1>
+    <div class="swiper-container photos ">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide ">
+                <div class="imgBx ">
+                    <img src="anshul.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>
+                        Anshul Sharma
+                        <br>
+                        <span>Software Engineer</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="krish.PNG" alt="">
+                </div>
+                <div class="details">
+                    <h3>
+                        Kishan Parida
+                        <br>
+                        <span>Full Stack Web Developer</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="rohit.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>
+                        Rohit Singh
+                        <br>
+                        <span>Penetration tester</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="yogesh.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>
+                        Yogesh Mittal
+                        <br>
+                        <span>MILLIONIARE</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="gurprem.PNG" alt="">
+                </div>
+                <div class="details">
+                    <h3>
+                        Gurprem Singh
+                        <br>
+                        <span>Python Developer</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+    <script src="swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 70,
+                stretch: 0,
+                depth: 100,
+                modifier: 3,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
